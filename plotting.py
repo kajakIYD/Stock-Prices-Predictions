@@ -1,6 +1,8 @@
 # Plotting module for approximation/prediction
 import matplotlib.pyplot as plt
 
+import date_spacing
+
 
 def plot_data(x, reference, predictions, models):
     plt.scatter(x, reference, s=1, marker=',', color='black', label='Reference Data')
@@ -10,9 +12,9 @@ def plot_data(x, reference, predictions, models):
 
     for model, prediction in zip(models, predictions):
         plt.plot(x, prediction, label=str(model.kernel))
-
-    labels = x[:10]
-    plt.xticks(range(0, len(x), 10), labels, rotation='vertical')
+    spacing = date_spacing.calculate(x)
+    labels = x[:len(x):spacing]
+    plt.xticks(range(0, len(x), spacing), labels, rotation='vertical')
 
     plt.legend()
     plt.show()
