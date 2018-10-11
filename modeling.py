@@ -14,7 +14,7 @@ def predict_data(x, models):
 def fit_data(x, y):
     print('Set up models...')
     svr_lin = SVR(kernel='linear', C=1e3)
-    svr_poly = SVR(kernel='poly', C=1e3, degree=1) # the same as linear:p
+    svr_poly = SVR(kernel='poly', C=1e3, degree=1)  # the same as linear:p
     svr_rbf = SVR(kernel='rbf', C=1e3, gamma=0.1)
 
     print('Fit models...')
