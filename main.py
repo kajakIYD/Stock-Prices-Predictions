@@ -2,7 +2,7 @@
 # (so it is kind of approximation)
 
 import quandl
-import matplotlib.pyplot as plt
+import plotting
 import numpy as np
 from sklearn.svm import SVR   # Support Vector Machine -> Support Vector Regression used for prediction
 # could be use for regression as well
@@ -68,7 +68,7 @@ date_mod = data.reset_index()['Date']
 for value in date_mod:
     dates.append(str(value)[:10])
 
-plot_data(dates, data.values, predictions, models)
+plotting.plot_data(dates, data.values, predictions, models)
 
 print('Done!')
 
