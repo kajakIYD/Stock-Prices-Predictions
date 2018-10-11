@@ -16,9 +16,11 @@ def fit_data(x, y):
     svr_lin = SVR(kernel='linear', C=1e3)
     svr_poly = SVR(kernel='poly', C=1e3, degree=1)  # the same as linear:p
     svr_rbf = SVR(kernel='rbf', C=1e3, gamma=0.1)
+    svr_sig = SVR(kernel='sigmoid', C=1e3, gamma=0.3)
+    svr_precomp = SVR(kernel='precomputed')
 
     print('Fit models...')
-    models = [svr_lin, svr_poly, svr_rbf]
+    models = [svr_lin, svr_poly, svr_rbf, svr_sig, svr_precomp]
     for model in models:
         print(str(model.kernel) + "...")
         model.fit(x, y)
