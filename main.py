@@ -9,6 +9,12 @@ import modeling
 import plotting
 
 
+def data_to_date(data):
+    dates = []
+    for value in data:
+        dates.append(str(value)[:(str(value).rfind('-') + 3)])
+    return dates
+
 
 print("Let's play!")
 start_date = "2010-01-01"
