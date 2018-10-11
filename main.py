@@ -2,11 +2,12 @@
 # (so it is kind of approximation)
 
 import quandl
+import numpy as np
+import datetime
+
 import modeling
 import plotting
-import numpy as np
 
-import datetime
 
 
 print("Let's play!")
