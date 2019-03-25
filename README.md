@@ -4,6 +4,7 @@ Prediction of stock prices based on couple of approximators with usage of **Pyth
 - SVR sigmoid kernel
 - SVR poly kernel (for now with degree=1)
 - SVR rbf kernel
+
 All models are **regularized** , data are acquired with usage of __Quandl__ **API**
 Naturally, much more regression models are available. For instance: linear regression, softmax regression, logistic regression...
 
