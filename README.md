@@ -3,10 +3,10 @@ Prediction of stock prices based on couple of approximators with usage of **Pyth
 - SVR linear kernel
 - SVR sigmoid kernel
 - SVR poly kernel (for now with degree=1)
-- SVR rbf kernel
+- SVR rbf (radial basis function) kernel
 
 All models are **regularized**, data are acquired with usage of __Quandl__ **API**.
-Naturally, much more regression models are available. For instance: linear regression, softmax regression, logistic regression...
+Naturally, much more regression models are available. For instance: linear regression, softmax regression, logistic regression. Stock prices prediction could be also done with the usage of ARX, AR, OE, ARMA, ARMAX models and so on...
 
 Company 1:
 <br>
@@ -34,4 +34,6 @@ Company 1:
 
 Company 2:
 <br>
-![Company2Poly3Regularized](https://github.com/kajakIYD/Stock-Prices-Predictions/blob/DocumentationImages/Company2Poly3Regularized.PNG)
+![Company2Poly3Regularized](https://github.com/kajakIYD/Stock-Prices-Predictions/blob/master/DocumentationImages/Company2Poly3Regularized.PNG)
+
+As You see, the polynomial model is not good enough. So by far, the best model is SVM with rbf kernal.
