@@ -1,11 +1,11 @@
 # Stock-Prices-Predictions
-Prediction of stock prices based on couple of approximators. So far these are SVR (like SVM, but for regression tasks - Support Vector Regression):
+Prediction of stock prices based on couple of approximators with usage of **Python** + **scikit-learn**. So far these are **SVR** (like SVM, but for regression tasks - Support Vector Regression):
 - SVR linear kernel
 - SVR sigmoid kernel
 - SVR poly kernel (for now with degree=1)
 - SVR rbf kernel
 <br>
-All models are regularized.
+All models are **regularized**.
 Naturally, much more regression models are available. For instance: linear regression, softmax regression, logistic regression...
 
 Company 1:
