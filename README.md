@@ -19,9 +19,11 @@ Company 2:
 It seems, that sigmoid kernel is not a good choice to make predictions. So let's see how the predictions look like without using  this kind of kernel:
 
 Company 1:
+<br>
 ![Company1WithoutSigmoid](https://github.com/kajakIYD/Stock-Prices-Predictions/blob/master/Company1WithoutSigmoid.PNG)
 
 Company 2:
+<br>
 ![Company2WithoutSigmoid](https://github.com/kajakIYD/Stock-Prices-Predictions/blob/master/Company2WithoutSigmoid.PNG)
 
 Much better, but not perfect. What is also remarkable, linear kernel is useless for this task, so it will be removed. Now I would like to introduce poly kernel, but with higher degree (for example 10) and more strict regularization.
